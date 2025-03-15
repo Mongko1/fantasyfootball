@@ -40,6 +40,20 @@ Run the application
 ```bash
 ./mvnw spring-boot:run
 ```
+## 🔗 API Endpoints
+
+#### Get players data
+
+```http
+  GET /api/players
+```
+
+#### Get teams data
+
+```http
+  GET /api/teams
+```
+
 ## 🛣️ Roadmap
 
 - 🃏 Implement chip recommendations (Wildcard, Free Hit, Triple Captain, Bench Boost)
