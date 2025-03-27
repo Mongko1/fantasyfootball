@@ -23,8 +23,13 @@ public class TestController {
         return "Hello World!";
     }
 
+    @PostMapping("/myteams")
+    public Player getPlayersByWebNames(@RequestBody PlayerRequestDTO request) {
+        return playerService.findReplacePlayer(request.getWebNames());
+    }
+
     @PostMapping("/myteam")
-    public List<Player> getPlayersByWebNames(@RequestBody PlayerRequestDTO request) {
+    public List<Player> getTeam(@RequestBody PlayerRequestDTO request) {
         return playerService.findPlayer(request.getWebNames());
     }
 }
